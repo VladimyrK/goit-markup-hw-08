@@ -1,0 +1,24 @@
+.footer-contacts {
+  display: inline-flex;
+  flex-flow: column;
+  font-style: normal;
+}
+
+.footer-contacts__adress {
+  margin-bottom: 9px;
+  color: var(--primary-bg-color);
+}
+.footer-contacts__mail {
+  margin-bottom: 9px;
+}
+.footer-contacts__tel,
+.footer-contacts__mail {
+  color: var(--footer-contacts-color);
+
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+  }
+}

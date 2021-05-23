@@ -1,0 +1,16 @@
+.header {
+  border: var(--header-border);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: var(--secondary-letter-spacing);
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}

@@ -1,0 +1,109 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form__label {
+  position: relative;
+  margin-bottom: 10px;
+}
+.modal-form__text {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+.modal-form__input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+
+  transition: border-color var(--animation);
+
+  &:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+  }
+}
+.modal-form__input--compact {
+  height: 40px;
+  padding-left: 42px;
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    border: 1px solid var(--secondary-color);
+    -webkit-text-fill-color: var(--primary-text-color);
+    box-shadow: 0 0 0 30px var(--primary-bg-color) inset;
+  }
+}
+.modal-form__icon {
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+
+  transition: fill var(--animation);
+
+  .modal-form__input--compact:focus + & {
+    fill: var(--secondary-color);
+  }
+}
+.modal-form__textarea {
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  resize: none;
+
+  &::placeholder {
+    color: var(--modal-placeholder-color);
+  }
+}
+.modal-form__label-check {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.modal-form__check-text {
+  margin-left: 7px;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+
+  &::before {
+    content: '';
+    display: inline-flex;
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--primary-title-color);
+    border-radius: 3px;
+  }
+
+  .modal-form__checkbox:checked + &::before {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    background-image: url(../images/checkbox.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .modal-form__checkbox:focus + &::before {
+    border: 2px solid var(--secondary-color);
+  }
+}
+
+.btn-submit {
+  margin-left: auto;
+  margin-right: auto;
+}

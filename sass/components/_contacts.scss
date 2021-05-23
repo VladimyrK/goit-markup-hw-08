@@ -1,0 +1,31 @@
+.contacts,
+.nav {
+  display: flex;
+}
+.contacts {
+  color: var(--primary-text-color);
+}
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--secondary-color);
+  }
+}
+.contacts__icon {
+  margin-right: 10px;
+
+  fill: var(--primary-text-color);
+
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: var(--secondary-color);
+  }
+}

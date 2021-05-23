@@ -1,0 +1,36 @@
+.services {
+  padding-top: 0;
+}
+.services__title {
+  margin-bottom: 50px;
+}
+.services__list {
+  display: flex;
+}
+.services__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.services__content {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 70px;
+  text-align: center;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-bg-color);
+  background-color: var(--services__content-bg);
+}

@@ -1,0 +1,27 @@
+.features {
+  display: flex;
+}
+.features__item {
+  flex-basis: calc((100% - 30px * 3) / 4);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.features__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--team-bg-color);
+  border-radius: 4px;
+}
+.features__title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--primary-title-color);
+}
