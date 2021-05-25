@@ -1,12 +1,28 @@
 .footer-contacts {
   display: inline-flex;
   flex-flow: column;
+  align-items: center;
+
+  margin-bottom: 60px;
+
   font-style: normal;
+
+  @media screen and (min-width: 1200px) {
+    align-items: start;
+    margin-bottom: 0;
+  }
 }
 
 .footer-contacts__adress {
   margin-bottom: 9px;
   color: var(--primary-bg-color);
+}
+.footer-contacts__list {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .footer-contacts__mail {
   margin-bottom: 9px;
@@ -21,4 +37,7 @@
   &:focus {
     color: var(--secondary-color);
   }
+}
+.footer-contacts__item {
+  margin-bottom: 9px;
 }

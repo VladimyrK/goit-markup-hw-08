@@ -1,13 +1,19 @@
-@import './utils/_variables';
+@import './utils/variables';
 @import './base/common';
 @import './base/container';
+@import './base/card-set';
 
 @import './components/title';
 @import './components/logo';
 @import './components/btn';
 @import './components/menu';
 @import './components/contacts';
+@import './components/social-icons';
+@import './components/modal';
+@import './components/modal-form';
+@import './components/btn-close';
 
+@import './layout/section';
 @import './layout/header';
 @import './layout/studio/hero';
 @import './layout/studio/features';
@@ -19,9 +25,5 @@
 @import './layout/footer-contacts';
 @import './layout/footer-join';
 @import './layout/footer-form';
-
-@import './components/modal';
-@import './components/modal-form';
-
-@import './layout/portfolio/_btns';
+@import './layout/portfolio/btns';
 @import './layout/portfolio/cards';

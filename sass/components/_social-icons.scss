@@ -1,0 +1,25 @@
+.social-icons {
+  display: inline-flex;
+}
+.social-icons__link {
+  fill: var(--team-icon-color);
+
+  transition: fill var(--animation), background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-color);
+    fill: var(--primary-bg-color);
+  }
+}
+.social-icons__item:not(:last-child) {
+  margin-right: 10px;
+}
+.icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}

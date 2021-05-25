@@ -1,13 +1,13 @@
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: calc(-1 * var(--cards-gap));
-  margin-top: calc(-1 * var(--cards-gap));
-}
 .card {
-  flex-basis: calc((100% - var(--cards-gap) * var(--cards)) / var(--cards));
-  margin-right: var(--cards-gap);
-  margin-top: var(--cards-gap);
+  flex-basis: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - var(--cards-gap) * 2) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - var(--cards-gap) * 3) / 3);
+  }
 }
 .card__link {
   display: block;

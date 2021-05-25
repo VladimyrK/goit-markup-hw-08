@@ -1,0 +1,15 @@
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    margin-left: calc(-1 * var(--cards-gap));
+    margin-top: calc(-1 * var(--cards-gap));
+  }
+}
+
+.card-set__item {
+  @media screen and (min-width: 768px) {
+    margin-left: var(--cards-gap);
+    margin-top: var(--cards-gap);
+  }
+}

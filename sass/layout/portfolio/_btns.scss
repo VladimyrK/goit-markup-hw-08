@@ -1,19 +1,37 @@
 .btn-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: start;
   margin-bottom: 50px;
+  margin-right: -8px;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 35px;
+  }
+}
+.btn-list__item {
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 .btn-list__item:not(:last-child) {
   margin-right: 8px;
 }
 .portfolio-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 6px 22px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
 
-  text-align: center;
   letter-spacing: 0.03em;
 
   background-color: var(--team-bg-color);

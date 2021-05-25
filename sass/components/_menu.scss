@@ -1,15 +1,22 @@
+.nav {
+  display: flex;
+}
 .menu {
-  display: inline-flex;
+  display: none;
   align-items: center;
   margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+  }
 }
 .menu__item:not(:last-child) {
   margin-right: 50px;
 }
-.contacts__link,
 .menu__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .menu__link {
   color: var(--primary-title-color);

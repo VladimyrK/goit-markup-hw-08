@@ -1,0 +1,25 @@
+.btn-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  background: var(--primary-bg-color);
+  border: var(--modal-btn-border);
+
+  cursor: pointer;
+
+  transition: fill var(--animation);
+
+  &:hover,
+  &:focus {
+    fill: var(--secondary-color);
+  }
+}

@@ -6,6 +6,7 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  outline: 1px solid black;
 }
 
 body {
@@ -44,23 +45,10 @@ img {
   margin: 0;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .column {
   display: flex;
   flex-direction: column;
 }
-.icon-circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-}
-
 .visualy-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -76,5 +64,6 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transform: scale(0);
+  // transform: scale(0);
+  transform: translateY(-100%);
 }
