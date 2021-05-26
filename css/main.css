@@ -710,6 +710,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 480px;
   min-height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -728,6 +729,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     background-image: linear-gradient(var(--hero-bg-overlay), var(--hero-bg-overlay)), url("../images/studio/hero/tablet/img.jpg");
   }
 }
@@ -740,6 +742,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
     min-height: 600px;
     background-image: linear-gradient(var(--hero-bg-overlay), var(--hero-bg-overlay)), url("../images/studio/hero/desktop/img.jpg");
   }
