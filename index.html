@@ -86,7 +86,7 @@
       </section>
 
       <!-- Секция особенности -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="visualy-hidden">Особенности</h2>
           <ul class="list features card-set">
@@ -128,36 +128,77 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Секция услуг -->
-      <!-- <section class="section services">
+      <section class="section services">
         <div class="container">
           <h2 class="title services__title">Чем мы занимаемся</h2>
           <ul class="list services__list">
             <li class="services__item">
-              <img src="./images/boxes/box11.jpg" width="370" height="294" alt="Мужчина пишет код за компьютером" />
+              <!-- <img src="./images/boxes/box11.jpg" width="370" height="294" alt="Мужчина пишет код за компьютером" /> -->
+              <picture>
+                <source
+                  srcset="./images/studio/works/desktop/img1.jpg 1x, ./images/studio/works/desktop/img@2x1.jpg 2x"
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/studio/works/desktop/img1.jpg" width="370" alt="Мужчина пишет код за компьютером" />
+              </picture>
               <h3 class="services__content">Десктопные приложения</h3>
             </li>
             <li class="services__item">
-              <img src="./images/boxes/box22.jpg" width="370" height="294" alt="Женщина тестирует мобильное приложение" />
+              <!-- <img src="./images/boxes/box22.jpg" width="370" height="294" alt="Женщина тестирует мобильное приложение" /> -->
+              <picture>
+                <source
+                  srcset="./images/studio/works/desktop/img2.jpg 1x, ./images/studio/works/desktop/img@2x2.jpg 2x"
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/studio/works/desktop/img2.jpg" width="370" alt="Женщина тестирует мобильное приложение" />
+              </picture>
               <h3 class="services__content">Мобильные приложения</h3>
             </li>
             <li class="services__item">
-              <img src="./images/boxes/box33.jpg" width="370" height="294" alt="Женщина создает дизайн с помощью планшета" />
+              <!-- <img src="./images/boxes/box33.jpg" width="370" height="294" alt="Женщина создает дизайн с помощью планшета" /> -->
+              <picture>
+                <source
+                  srcset="./images/studio/works/desktop/img3.jpg 1x, ./images/studio/works/desktop/img@2x3.jpg 2x"
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/studio/works/desktop/img3.jpg" width="370" alt="Женщина создает дизайн с помощью планшета" />
+              </picture>
               <h3 class="services__content">Дизайнерские решения</h3>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Секция команды -->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="title team__title">Наша команда</h2>
           <ul class="team__list list card-set">
             <li class="team__card card-set__item">
-              <img src="./images/team/img11.jpg" width="270" alt="Игорь Демьяненко" />
+              <picture>
+                <source
+                  srcset="./images/studio/team/desktop/img1.jpg 1x, ./images/studio/team/desktop/img@2x1.jpg 2x"
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/studio/team/tablet/img1.jpg 1x, ./images/studio/team/tablet/img@2x1.jpg 2x"
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/studio/team/mobile/img1.jpg 1x, ./images/studio/team/mobile/img@2x1.jpg 2x"
+                  media="(max-width:767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/studio/team/mobile/img1.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="team__content">
                 <h3 class="title team__name">Игорь Демьяненко</h3>
                 <p class="team__post" lang="en">Product Designer</p>
@@ -194,7 +235,24 @@
               </div>
             </li>
             <li class="team__card card-set__item">
-              <img src="./images/team/img12.jpg" width="270" alt="Ольга Репина" />
+              <picture>
+                <source
+                  srcset="./images/studio/team/desktop/img2.jpg 1x, ./images/studio/team/desktop/img@2x2.jpg 2x"
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/studio/team/tablet/img2.jpg 1x, ./images/studio/team/tablet/img@2x2.jpg 2x"
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/studio/team/mobile/img2.jpg 1x, ./images/studio/team/mobile/img@2x2.jpg 2x"
+                  media="(max-width:767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/studio/team/mobile/img2.jpg" alt="Ольга Репина" />
+              </picture>
               <div class="team__content">
                 <h3 class="title team__name">Ольга Репина</h3>
                 <p class="team__post" lang="en">Frontend Developer</p>
@@ -231,7 +289,24 @@
               </div>
             </li>
             <li class="team__card card-set__item">
-              <img src="./images/team/img13.jpg" width="270" alt="Николай Тарасов" />
+              <picture>
+                <source
+                  srcset="./images/studio/team/desktop/img3.jpg 1x, ./images/studio/team/desktop/img@2x3.jpg 2x"
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/studio/team/tablet/img3.jpg 1x, ./images/studio/team/tablet/img@2x3.jpg 2x"
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/studio/team/mobile/img3.jpg 1x, ./images/studio/team/mobile/img@2x3.jpg 2x"
+                  media="(max-width:767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/studio/team/mobile/img3.jpg" alt="Николай Тарасов" />
+              </picture>
               <div class="team__content">
                 <h3 class="title team__name">Николай Тарасов</h3>
                 <p class="team__post" lang="en">Marketing</p>
@@ -268,7 +343,24 @@
               </div>
             </li>
             <li class="team__card card-set__item">
-              <img src="./images/team/img14.jpg" width="270" alt="Михаил Ермаков" />
+              <picture>
+                <source
+                  srcset="./images/studio/team/desktop/img4.jpg 1x, ./images/studio/team/desktop/img@2x4.jpg 2x"
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/studio/team/tablet/img4.jpg 1x, ./images/studio/team/tablet/img@2x4.jpg 2x"
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/studio/team/mobile/img4.jpg 1x, ./images/studio/team/mobile/img@2x4.jpg 2x"
+                  media="(max-width:767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/studio/team/mobile/img4.jpg" alt="Михаил Ермаков" />
+              </picture>
               <div class="team__content">
                 <h3 class="title team__name">Михаил Ермаков</h3>
                 <p class="team__post" lang="en">UI Designer</p>
@@ -306,10 +398,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Клиенты -->
-      <!-- <section class="section clients">
+      <section class="section clients">
         <div class="container">
           <h2 class="title clients__title">Постоянные клиенты</h2>
           <ul class="list clients__cards card-set">
@@ -357,7 +449,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Футер -->
