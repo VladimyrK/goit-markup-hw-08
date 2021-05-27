@@ -1,12 +1,13 @@
 .menu-mobile {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 48px 40px;
   width: 100vw;
+  max-width: 767px;
   height: 100vh;
   z-index: 100;
 
@@ -30,6 +31,9 @@
 }
 .menu-mobile__nav-link:hover,
 .menu-mobile__nav-link:focus {
+  color: var(--secondary-color);
+}
+.menu-mobile__nav-link--active {
   color: var(--secondary-color);
 }
 .menu-mobile__tel {
