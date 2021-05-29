@@ -643,9 +643,16 @@ img {
   max-width: 767px;
   height: 100vh;
   z-index: 100;
+  overflow: auto;
   letter-spacing: 0.02em;
   background-color: var(--primary-bg-color);
   transition: opacity 500ms linear, visibility 500ms linear, transform 500ms linear;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mobile {
+    display: none;
+  }
 }
 
 .btn-close__menu-mobile {
